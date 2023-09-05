@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
 :root {
-    --primary-colorv1: #8A307f ;
-    --secondary-colorv2: #79a7d3 ;
-    --tertiary-colorv3: #6883bc ;
+    --primary-color: #1fbfb8 ;
+    --secondary-color: #05716c ;
+    --tertiary-color: #1978a5 ;
+    --accent-color: #031163;
     --additional-color: #FFFFFF;
     --font-style: 'Poppins', sans-serif;
     --padding: 60px;
@@ -82,7 +84,7 @@ line
         margin-bottom: 6px;
         width: 30px;
         height: 3px;
-        background-color: var(--primary-colorv1);
+        background-color: var(--primary-color);
     }
 
     .navbar {
@@ -90,7 +92,7 @@ line
         height: 0;
         position: absolute;
         top: 110px;
-        background-color: var(--secondary-colorv2);
+        background-color: var(--accent-color);
         width: 100vw;
         left: 0;
         right: 0;
@@ -113,8 +115,12 @@ line
         margin-top: 20px;
     }
 
+    .navbar ul li a {
+        color: var(--additional-color);
+    }
+
     .navbar ul li a:hover {
-        color: var(--primary-colorv1);
+        color: var(--primary-color);
     }
 
     .navbar.active {

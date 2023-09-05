@@ -14,10 +14,12 @@ html,body{
 }
 
 :root {
-    --primary-colorv1: #8A307f ;
-    --secondary-colorv2: #79a7d3 ;
-    --tertiary-colorv3: #6883bc ;
+    --primary-color: #1fbfb8 ;
+    --secondary-color: #05716c ;
+    --tertiary-color: #1978a5 ;
+    --accent-color: #031163;
     --additional-color: #FFFFFF;
+
     --font-style: 'Poppins', sans-serif;
     --padding: 60px;
 }
@@ -84,17 +86,17 @@ header {
 }
 
 .navbar ul li .active {
-    color: var(--primary-colorv1);
+    color: var(--primary-color);
 }
 
 .navbar ul li a:hover {
-    color:#a3649c;
+    color: var(--primary-color);
     transition: ease-in 0.3s;
 }
 
 .nav-btn {
     border-radius: 5px;
-    background-color: var(--primary-colorv1);
+    background-color: var(--primary-color);
     padding: 13px 25px;
     border: none;
     font-size: 14px;
@@ -105,8 +107,8 @@ header {
 }
 
 .nav-btn:hover {
-    background-color: #a3649c;
-    transition: ease-in 0.6s;
+    background-color:#4bc5bf;
+    transition: ease-in 0.3s;
 }
 
 /*Go Up Button CSS*/
@@ -117,7 +119,7 @@ header {
     font-size: 16px;
     width: 50px;
     height: 50px;
-    background: var(--primary-colorv1);
+    background: var(--primary-color);
     color: var(--additional-color);
     border: none;
     cursor: pointer;
@@ -146,18 +148,18 @@ header {
 .welcome-content-con .welcome-heading {
     font-size: 75px;
     font-weight: 900;
-    color: var(--tertiary-colorv3);
+    color: var(--accent-color);
 }
 
 .welcome-content-con .parag-content {
     font-size: 22px;
     font-weight: 400;
     text-align: justify;
-    color: var(--secondary-colorv2);
+    color: var();
 }
 
 .welcome-content-con .p-1 {
-    color: var(--primary-colorv1);
+    color: var(--tertiary-color);
     font-size: 35px;
     font-weight: 600;
 }
@@ -165,7 +167,7 @@ header {
 .welcome-content-con .p-2 {
     font-size: 22px;
     font-weight: 500;
-    color: #000000;
+    color: var(--secondary-color);
 }
 .welcome-img-con {
     width: 40%;
@@ -180,10 +182,10 @@ header {
 
 
 .btn {
-    background-color: var(--primary-colorv1);
-    padding: 15px 50px;
+    background-color: var(--primary-color);
+    padding: 18px 50px;
     color: var(--primary-color);
-    border-radius: 18px;
+    border-radius: 8px;
     font-size: 18px;
     border: none;
     margin-top: 20px;
@@ -212,13 +214,13 @@ header {
 
 .heading {
     font-size: 55px;
-    color: var(--primary-colorv1);
+    color: var(--accent-color);
     font-weight: 900;
 }
 
 .sub-heading {
     font-size: 30px;
-    color: var(--secondary-colorv2);
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -230,7 +232,7 @@ header {
 }
 
 .secondary {
-    background-color: var(--primary-colorv1);
+    background-color: var(--primary-color);
     color: var(--additional-color);
     font-family: var(--font-style);
     font-size: 16px;
@@ -382,7 +384,7 @@ header {
     flex-wrap: wrap;
     text-align: center;
     padding: 30px 15px;
-    color: #094e86;
+    color: var(--accent-color);
     font-size: 20px;
   
 }
@@ -394,7 +396,7 @@ header {
 }
 
 .service:hover {
-    background-color:#0a2f4e;
+    background-color:var(--accent-color);
     transition: 0.3s ease-in-out;   
     color: #fff;
 }
@@ -596,7 +598,7 @@ header {
 
 .footer {
     padding: 30px 65px;
-    background-color: var(--primary-colorv1);
+    background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
